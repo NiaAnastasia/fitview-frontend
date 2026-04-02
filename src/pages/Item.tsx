@@ -5,12 +5,13 @@ import { mockClothingItems } from '../data/mockClothing';
 const Item = () => {
   const [height, setHeight] = useState(165);
   const item = mockClothingItems[0];
+  const size = item.sizes[0];
 
   return (
     <div style={{ padding: '24px', maxWidth: '600px', margin: '0 auto' }}>
       <h1>{item.name}</h1>
-      <p>{item.description}</p>
-      <p>Length: {item.lengthCm}cm</p>
+      <p>{item.brand}</p>
+      <p>Length: {size.totalLengthCm}cm</p>
 
       <div style={{ margin: '24px 0' }}>
         <label>
@@ -26,7 +27,7 @@ const Item = () => {
         </label>
       </div>
 
-      <Silhouette userHeight={height} itemLengthCm={item.lengthCm} />
+      <Silhouette userHeight={height} itemLengthCm={size.totalLengthCm} />
     </div>
   );
 };
