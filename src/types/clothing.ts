@@ -10,6 +10,7 @@ export interface UserProfile {
 }
 
 export interface ItemSize {
+  id: string; 
   totalLengthCm: number;
   inseamCm: number;
   waistCm: number;

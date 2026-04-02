@@ -9,6 +9,7 @@ export const mockClothingItems: ClothingItem[] = [
     imageUrl: 'https://placehold.co/400x500?text=Dress',
     sizes: [
       {
+        id: '1', 
         sizeLabel: 'S',
         totalLengthCm: 110,
         inseamCm: 0,
@@ -26,6 +27,7 @@ export const mockClothingItems: ClothingItem[] = [
     imageUrl: 'https://placehold.co/400x500?text=Jeans',
     sizes: [
       {
+        id: '2',
         sizeLabel: 'M',
         totalLengthCm: 100,
         inseamCm: 76,
@@ -43,6 +45,7 @@ export const mockClothingItems: ClothingItem[] = [
     imageUrl: 'https://placehold.co/400x500?text=Sweater',
     sizes: [
       {
+        id: '3',
         sizeLabel: 'L',
         totalLengthCm: 65,
         inseamCm: 0,
